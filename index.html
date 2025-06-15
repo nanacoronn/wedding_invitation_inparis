@@ -26,8 +26,8 @@
             border-radius: 16px; /* Smooth rounded corners for a gentle look, slightly larger */
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* 影を少し強めにし、浮遊感を出す */
             width: 100%;
-            max-width: 750px; /* Maximum width for the invitation card on larger screens, slightly wider */
-            padding: 3rem; /* Inner padding for content, slightly more */
+            max-width: 600px; /* Maximum width for the invitation card on larger screens, slightly wider */
+            padding: 2rem; /* Inner padding for content, slightly more */
             position: relative; /* Needed for absolute positioning of background image */
             overflow: hidden; /* Ensures the background image respects border-radius */
             text-align: center; /* Center align all text content */
@@ -53,10 +53,10 @@
         h1 {
             font-family: 'Great Vibes', cursive, 'Playfair Display', serif; /* Only H1 uses script font */
             font-weight: 800; /* Bold */
-            font-size: 4.5rem; /* さらに大きくして、華やかさを強調 */
+            font-size: 4.0rem; /* さらに大きくして、華やかさを強調 */
             line-height: 1.2;
             color: #5d4037;
-            margin-bottom: 2rem; /* スペースを少し広げる */
+            margin-bottom: 1.2rem; /* スペースを少し広げる */
             text-shadow: 2px 2px 4px rgba(0,0,0,0.08); /* 影を強調 */
         }
         h2 {
@@ -64,11 +64,18 @@
             font-weight: 700;
             color: #8d6e63; /* Warm accent color for subheadings */
             margin-bottom: 1.2rem; /* スペースを少し調整 */
-            font-size: 2.3rem; /* 少し大きく */
+            font-size: 2.0rem; /* 少し大きく */
+        }
+	 h3 { /* 追加：タクシー目安の各地点のタイトル用 */
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: #5d4037;
+            font-size: 1.3rem; /* カードが小さくなったので調整 */
+            margin-bottom: 0.6rem;
         }
         p, ul, ol, li { /* ulとolも追加 */
             font-family: 'Inter', sans-serif; /* Body text uses Inter for readability */
-            font-size: 1.08rem; /* 少し大きく */
+            font-size: 1.0rem; /* 少し大きく */
             line-height: 1.7; /* 行間を広げ、読みやすく */
             margin-bottom: 0.9rem; /* スペースを調整 */
         }
@@ -79,18 +86,18 @@
             text-align: left;
             margin-left: auto;
             margin-right: auto;
-            max-width: 450px; /* 少し広く */
+            max-width: 350px; /* 少し広く */
         }
         ul li {
-            margin-bottom: 0.8rem;
-            padding-left: 1.8rem; /* インデントを広げる */
+            margin-bottom: 0.6rem;
+            padding-left: 1.4rem; /* インデントを広げる */
             position: relative;
-            font-size: 1.15rem; /* リスト項目も少し大きく */
+            font-size: 1.05rem; /* リスト項目も少し大きく */
         }
         ul li::before {
             content: '•';
             color: #8d6e63;
-            font-size: 1.3em; /* 箇条書きのドットを大きく */
+            font-size: 1.1em; /* 箇条書きのドットを大きく */
             position: absolute;
             left: 0;
             top: 0;
@@ -281,6 +288,8 @@
                     </p>
                 </div>
             </div>
+		
+	　　 <div class="section-divider"></div>
 		
             <ul class="text-left mx-auto max-w-sm">
                 <li>
